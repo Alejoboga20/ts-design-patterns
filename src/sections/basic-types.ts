@@ -78,3 +78,23 @@ let e: F = {
 	name: 'Theo',
 	age: 20,
 };
+
+/* template literals */
+type Suit = `${'Spade' | 'Heart' | 'Diamond' | 'Club'}`;
+
+type Rank = `${
+	| '2'
+	| '3'
+	| '4'
+	| '5'
+	| '6'
+	| '7'
+	| '8'
+	| '9'
+	| '10'
+	| 'Jack'
+	| 'Queen'
+	| 'King'
+	| 'Ace'}`;
+
+type Deck = `${Rank} of ${Suit}`;
